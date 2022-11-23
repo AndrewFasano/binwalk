@@ -83,7 +83,8 @@ function install_yaffshiv
 
 function install_sasquatch
 {
-    git clone --quiet --depth 1 --branch "master" https://github.com/devttys0/sasquatch
+    # Installing from a fork for this bugfix: https://github.com/devttys0/sasquatch/pull/47
+    git clone --quiet --depth 1 --branch "master" https://github.com/threadexio/sasquatch
     (cd sasquatch && $SUDO ./build.sh)
     $SUDO rm -rf sasquatch
 }
