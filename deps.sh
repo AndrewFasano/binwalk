@@ -116,8 +116,8 @@ function install_cramfstools
 
 function install_ubireader
 {
-    git clone --quiet --depth 1 --branch "master" https://github.com/jrspruitt/ubi_reader
-    (cd ubi_reader && $SUDO $PYTHON setup.py install)
+    git clone --quiet --depth 1 --branch "v0.8.5-master" https://github.com/jrspruitt/ubi_reader
+    (cd ubi_reader && pwd && $SUDO $PYTHON setup.py install)
     $SUDO rm -rf ubi_reader
 }
 
